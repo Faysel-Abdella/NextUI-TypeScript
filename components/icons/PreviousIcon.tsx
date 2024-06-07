@@ -1,8 +1,7 @@
 import React from "react";
 export const PreviousIcon = ({
   size = 24,
-  width = size,
-  height = size,
+
   ...props
 }) => (
   <svg

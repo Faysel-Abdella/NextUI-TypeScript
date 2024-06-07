@@ -1,18 +1,17 @@
 import React from "react";
 export const PauseCircleIcon = ({
   size = 24,
-  width = size,
-  height = size,
+
   ...props
 }) => (
   <svg
     aria-hidden="true"
     fill="none"
     focusable="false"
-    height={size || height}
+    height={size}
     role="presentation"
     viewBox="0 0 24 24"
-    width={size || width}
+    width={size}
     {...props}
   >
     <path
