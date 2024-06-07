@@ -1,11 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
-import clsx from "clsx";
 
 import { Providers } from "./providers";
-
-import { fontSans } from "@/config/fonts";
 
 export const metadata: Metadata = {
   title: "NextUI test - upwork",
@@ -30,15 +26,10 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-      <body
-        className={clsx(
-          "min-h-screen bg-slate-300 font-sans antialiased",
-          fontSans.variable
-        )}
-      >
+      <body className="min-h-screen bg-slate-300 font-sans antialiased">
         <Providers themeProps={{ attribute: "class" }}>
-          <div className="relative flex flex-col h-screen">
-            <main className=" ">{children}</main>
+          <div className="relative flex flex-col h-screen bg-slate-300">
+            <main className=" bg-slate-300">{children}</main>
           </div>
         </Providers>
       </body>
