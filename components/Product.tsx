@@ -9,6 +9,8 @@ import { PreviousIcon } from "./icons/PreviousIcon";
 import { RepeatOneIcon } from "./icons/RepeatOneIcon";
 import { ShuffleIcon } from "./icons/ShuffleIcon";
 
+import images from "@/assets/images";
+
 const Product = () => {
   const [liked, setLiked] = React.useState(false);
   return (
@@ -25,7 +27,7 @@ const Product = () => {
               className="object-cover"
               height={200}
               shadow="md"
-              src="https://nextui.org/images/album-cover.png"
+              src={images.profile.src}
               width="100%"
             />
           </div>

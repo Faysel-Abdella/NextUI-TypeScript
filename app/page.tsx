@@ -9,7 +9,7 @@ import Profile from "@/components/Profile";
 import Products from "@/components/Products";
 
 export default function Home() {
-  const [category, setCategory] = useState("products");
+  const [category, setCategory] = useState("posts");
 
   return (
     <section className="">
