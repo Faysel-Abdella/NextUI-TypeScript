@@ -1,8 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
-import { Providers } from "./providers";
-
 export const metadata: Metadata = {
   title: "NextUI test - upwork",
   description: "NextUI test - upwork, a Next.js UI library. 🚀",
@@ -27,11 +25,9 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <head />
       <body className="min-h-screen bg-slate-300 font-sans antialiased">
-        <Providers themeProps={{ attribute: "class" }}>
-          <div className="relative flex flex-col h-screen bg-slate-300">
-            <main className=" bg-slate-300">{children}</main>
-          </div>
-        </Providers>
+        <div className="relative flex flex-col h-screen bg-slate-300">
+          <main className=" bg-slate-300">{children}</main>
+        </div>
       </body>
     </html>
   );
