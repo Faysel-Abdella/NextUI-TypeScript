@@ -7,7 +7,7 @@ import Post from "./Post";
 
 const Posts = () => {
   return (
-    <section className="flex flex-col justify-center items-center mt-24">
+    <section className="flex flex-col justify-center items-center mt-24 pb-16">
       <div className="font-Rubik mb-4 ">
         <Input
           isClearable
@@ -35,7 +35,7 @@ const Posts = () => {
               "border-2 border-solid border-black/10 dark:border-white/10",
             ],
           }}
-          className="w-[400px] h-[50px] "
+          className="w-[400px] h-[50px] max-md:w-[250px] "
           placeholder="Type to search..."
           startContent={
             <Image

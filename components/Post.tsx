@@ -15,9 +15,14 @@ interface PostProps {
 
 const Post = ({ title, subtitle, description, like, comment }: PostProps) => {
   return (
-    <Card className="max-w-[600px] font-Montserrat">
-      <CardHeader className="flex gap-3">
-        <Avatar isBordered color="secondary" src={images.profile.src} />
+    <Card className="max-w-[600px] font-Montserrat max-md:mx-2">
+      <CardHeader className="flex gap-3 max-md:p-2">
+        <Avatar
+          isBordered
+          color="secondary"
+          src={images.profile.src}
+          className="flex-shrink-0"
+        />
         <div className="flex flex-col">
           <p className="text-md font-semibold">{title}</p>
           <p className="text-small text-default-500 font-semibold">
