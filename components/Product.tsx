@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
-
 import { HeartIcon } from "./icons/HeartIcon";
 import { PauseCircleIcon } from "./icons/PauseCircleIcon";
 import { NextIcon } from "./icons/NextIcon";

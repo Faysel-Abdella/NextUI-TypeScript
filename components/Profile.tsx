@@ -1,12 +1,7 @@
-import React from "react";
-
 import { Button } from "@nextui-org/button";
-
 import Link from "next/link";
-
-import icons from "@/assets/icons";
-
 import Image from "next/image";
+import icons from "@/assets/icons";
 
 const Profile = () => {
   return (
