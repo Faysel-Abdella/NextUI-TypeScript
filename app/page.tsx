@@ -1,14 +1,18 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
+import Image from "next/image";
 
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import images from "@/assets/images";
+import { Avatar, AvatarGroup, AvatarIcon } from "@nextui-org/avatar";
+
+import { Button, ButtonGroup } from "@nextui-org/button";
+import icons from "@/assets/icons";
+import HomeHeader from "@/components/HomeHeader";
+import Profile from "@/components/Profile";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10"></section>
+    <section className="">
+      <HomeHeader />
+      <Profile />
+    </section>
   );
 }
