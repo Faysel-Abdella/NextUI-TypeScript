@@ -1,5 +1,10 @@
 import React from "react";
-export const RepeatOneIcon = ({ size = 24, width, height, ...props }) => (
+export const RepeatOneIcon = ({
+  size = 24,
+  width = size,
+  height = size,
+  ...props
+}) => (
   <svg
     aria-hidden="true"
     fill="none"

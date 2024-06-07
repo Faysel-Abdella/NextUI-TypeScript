@@ -1,5 +1,7 @@
 import React from "react";
+
 import { Input } from "@nextui-org/input";
+
 import Image from "next/image";
 import icons from "@/assets/icons";
 import posts from "@/constants/posts";

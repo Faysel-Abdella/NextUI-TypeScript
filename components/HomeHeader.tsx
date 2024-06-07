@@ -1,8 +1,10 @@
 import React from "react";
 
-import Image from "next/image";
-import images from "@/assets/images";
 import { Avatar } from "@nextui-org/avatar";
+
+import Image from "next/image";
+
+import images from "@/assets/images";
 
 const HomeHeader = () => {
   return (

@@ -15,7 +15,7 @@ export default function Home() {
     <section className="">
       <HomeHeader />
       <Profile />
-      <Category category={category} setCategory={setCategory} />
+      <Category setCategory={setCategory} />
       {category === "products" ? <Products /> : <Posts />}
     </section>
   );

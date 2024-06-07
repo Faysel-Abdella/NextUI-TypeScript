@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { Divider, Link, Image as ImageUI, Avatar } from "@nextui-org/react";
+
+import { Divider, Link, Avatar } from "@nextui-org/react";
+
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import images from "@/assets/images";
 import icons from "@/assets/icons";

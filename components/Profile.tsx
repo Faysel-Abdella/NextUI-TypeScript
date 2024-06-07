@@ -1,9 +1,12 @@
 import React from "react";
 
-import { Button, ButtonGroup } from "@nextui-org/button";
-import icons from "@/assets/icons";
-import Image from "next/image";
+import { Button } from "@nextui-org/button";
+
 import Link from "next/link";
+
+import icons from "@/assets/icons";
+
+import Image from "next/image";
 
 const Profile = () => {
   return (

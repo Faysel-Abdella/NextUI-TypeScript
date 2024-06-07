@@ -2,11 +2,17 @@
 
 import React from "react";
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
+
 import { HeartIcon } from "./icons/HeartIcon";
+
 import { PauseCircleIcon } from "./icons/PauseCircleIcon";
+
 import { NextIcon } from "./icons/NextIcon";
+
 import { PreviousIcon } from "./icons/PreviousIcon";
+
 import { RepeatOneIcon } from "./icons/RepeatOneIcon";
+
 import { ShuffleIcon } from "./icons/ShuffleIcon";
 
 import images from "@/assets/images";
