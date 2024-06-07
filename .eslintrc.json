@@ -53,15 +53,10 @@
       }
     ],
     "import/order": [
-      "warn",
+      "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          ["parent", "sibling", "index"]
-        ],
-        "newlines-between": "never"
+        "groups": [["builtin", "external"]],
+        "newlines-between": "always"
       }
     ],
     "react/self-closing-comp": "warn",
