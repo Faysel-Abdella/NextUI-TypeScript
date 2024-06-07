@@ -1,5 +1,5 @@
 "use client";
-
+import { useState } from "react";
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
 import { HeartIcon } from "./icons/HeartIcon";
 import { PauseCircleIcon } from "./icons/PauseCircleIcon";
@@ -11,7 +11,7 @@ import { ShuffleIcon } from "./icons/ShuffleIcon";
 import images from "@/assets/images";
 
 const Product = () => {
-  const [liked, setLiked] = React.useState(false);
+  const [liked, setLiked] = useState(false);
   return (
     <Card
       isBlurred
