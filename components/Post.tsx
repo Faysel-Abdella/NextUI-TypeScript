@@ -9,8 +9,8 @@ interface PostProps {
   title: string;
   subtitle: string;
   description: string;
-  like: number;
-  comment: number;
+  like: string;
+  comment: string;
 }
 
 const Post = ({ title, subtitle, description, like, comment }: PostProps) => {
@@ -19,17 +19,15 @@ const Post = ({ title, subtitle, description, like, comment }: PostProps) => {
       <CardHeader className="flex gap-3">
         <Avatar isBordered color="secondary" src={images.profile.src} />
         <div className="flex flex-col">
-          <p className="text-md font-semibold">NextUI</p>
+          <p className="text-md font-semibold">{title}</p>
           <p className="text-small text-default-500 font-semibold">
-            nextui.org
+            {subtitle}
           </p>
         </div>
       </CardHeader>
       <Divider />
       <CardBody>
-        <p className="font-Rubik">
-          Make beautiful websites regardless of your design experience.
-        </p>
+        <p className="font-Rubik">{description}</p>
       </CardBody>
       <Divider />
       <CardFooter>
@@ -39,7 +37,7 @@ const Post = ({ title, subtitle, description, like, comment }: PostProps) => {
               <Link href="#">
                 <Image src={icons.like} alt="Like icon" className="w-7 h-7" />
               </Link>
-              <span className="text-default-500 font-semibold ">20</span>
+              <span className="text-default-500 font-semibold ">{like}</span>
             </div>
 
             <div className="flex gap-1.5 justify-center items-center">
@@ -50,7 +48,7 @@ const Post = ({ title, subtitle, description, like, comment }: PostProps) => {
                   className="w-5 h-7"
                 />
               </Link>
-              <span className="text-default-500 font-semibold ">20</span>
+              <span className="text-default-500 font-semibold ">{comment}</span>
             </div>
 
             <Link href="#">

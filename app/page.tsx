@@ -1,5 +1,5 @@
 import HomeHeader from "@/components/HomeHeader";
-import Post from "@/components/Post";
+import Posts from "@/components/Posts";
 import Profile from "@/components/Profile";
 
 export default function Home() {
@@ -7,7 +7,8 @@ export default function Home() {
     <section className="">
       <HomeHeader />
       <Profile />
-      <Post />
+
+      <Posts />
     </section>
   );
 }
